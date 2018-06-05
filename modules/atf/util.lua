@@ -351,3 +351,19 @@ function script_execute(script_name)
   atf_logger = atf_logger.init_log(tostring(script_name))
   dofile(script_name)
 end
+
+--Create new table and copy value from other tables. It is used to void unexpected change original table.
+function cloneTable(original)
+  if original == nil then
+    return {}
+  end
+
+    local copy = {}
+    for k, v in pairs(original) do
+        if type(v) == 'table' then
+            v = cloneTable(v)
+        end
+        copy[k] = v
+    end
+    return copy
+end
