@@ -13,7 +13,7 @@ config.color = true
 --- Remote cofiguration
 config.remoteConnection = {}
 config.remoteConnection.enabled = true
-config.remoteConnection.url = "192.168.1.26"
+config.remoteConnection.url = "172.31.239.150"
 config.remoteConnection.port = 5555
 
 --- HMI configuration
@@ -62,7 +62,7 @@ config.controlMqConfig.flags = 257 -- O_WRONLY | O_CREAT
 config.controlMqConfig.mode = 1638 -- S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH | S_IWOTH
 
 --- Define host for default mobile device connection
-config.mobileHost = "192.168.1.2"
+config.mobileHost = "172.31.239.131"
 --- Define port for default mobile device connection
 config.mobilePort = 12346
 --- Define timeout for Heartbeat in msec
@@ -92,7 +92,7 @@ config.pathToSDLInterfaces = ""
 --- Define SDL modification
 config.SDL = "SmartDeviceLink"
 --- Definehost for SDL logs
-config.sdl_logs_host = "192.168.1.26"
+config.sdl_logs_host = "172.31.239.150"
 --- Define port for SDL logs
 config.sdl_logs_port = 6676
 --- Flag which defines behavior of ATF on SDL crash
@@ -138,7 +138,7 @@ config.application1 =
   {
     syncMsgVersion =
     {
-      majorVersion = 3,
+      majorVersion = 5,
       minorVersion = 0
     },
     appName = "Test Application",
@@ -146,7 +146,8 @@ config.application1 =
     languageDesired = 'EN-US',
     hmiDisplayLanguageDesired = 'EN-US',
     appHMIType = { "NAVIGATION" },
-    appID = "0000001",
+    appID = "0001",
+    fullAppID = "0000001",
     deviceInfo =
     {
       os = "Android",
@@ -165,7 +166,7 @@ config.application2 =
   {
     syncMsgVersion =
     {
-      majorVersion = 3,
+      majorVersion = 5,
       minorVersion = 0
     },
     appName = "Test Application2",
@@ -173,7 +174,8 @@ config.application2 =
     languageDesired = 'EN-US',
     hmiDisplayLanguageDesired = 'EN-US',
     appHMIType = { "NAVIGATION" },
-    appID = "0000002",
+    appID = "0002",
+    fullAppID = "0000002",
     deviceInfo =
     {
       os = "Android",
@@ -192,7 +194,7 @@ config.application3 =
   {
     syncMsgVersion =
     {
-      majorVersion = 3,
+      majorVersion = 5,
       minorVersion = 0
     },
     appName = "Test Application3",
@@ -200,7 +202,8 @@ config.application3 =
     languageDesired = 'EN-US',
     hmiDisplayLanguageDesired = 'EN-US',
     appHMIType = { "NAVIGATION" },
-    appID = "0000003",
+    appID = "0003",
+    fullAppID = "0000003",
     deviceInfo =
     {
       os = "Android",
@@ -219,7 +222,7 @@ config.application4 =
   {
     syncMsgVersion =
     {
-      majorVersion = 3,
+      majorVersion = 5,
       minorVersion = 0
     },
     appName = "Test Application4",
@@ -227,7 +230,8 @@ config.application4 =
     languageDesired = 'EN-US',
     hmiDisplayLanguageDesired = 'EN-US',
     appHMIType = { "NAVIGATION" },
-    appID = "0000004",
+    appID = "0004",
+    fullAppID = "0000004",
     deviceInfo =
     {
       os = "Android",
@@ -246,7 +250,7 @@ config.application5 =
   {
     syncMsgVersion =
     {
-      majorVersion = 3,
+      majorVersion = 5,
       minorVersion = 0
     },
     appName = "Test Application5",
@@ -254,7 +258,8 @@ config.application5 =
     languageDesired = 'EN-US',
     hmiDisplayLanguageDesired = 'EN-US',
     appHMIType = { "NAVIGATION" },
-    appID = "0000005",
+    appID = "0005",
+    fullAppID = "0000005",
     deviceInfo =
     {
       os = "Android",
